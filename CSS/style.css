@@ -44,7 +44,7 @@ nav.scrolled {
   object-fit: contain;
 }
 
-.icon {
+.icon-menu {
   display: none;
   cursor: pointer;
 }
@@ -631,12 +631,13 @@ nav.scrolled {
 
 .service-box h3 {
   color: #2bcaff;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-weight: 500;
   margin-bottom: 8px;
 }
 .service-box p {
   font-size: 1rem;
+  line-height: 1.5;
   color: #5a5a5a;
 }
 
@@ -654,6 +655,45 @@ nav.scrolled {
 
 
 /* Contact section */
+.contact-section {
+  padding: 80px 20px;
+  background: #f8fbff;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+  margin: auto;
+  max-width: 1200px;
+  /* align-items: flex-start; */
+}
+
+.contact-info {
+  flex: 1 1 300px;
+}
+
+.contact-info a[href^="mailto:"],
+.contact-info p {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  font-size: 1.2rem;
+  color: #5a5a5a;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.contact-info a[href^="mailto:"]:hover {
+  color: #2bcaff;
+}
+
+.contact-info .icon {
+  color: #2bcaff;
+  margin-right: 5px;
+
+}
 
 .contact-info .social-links {
   display: flex;
@@ -747,6 +787,61 @@ nav.scrolled {
   background-color: #25D366;
   color: #fff;
   border: none;
+}
+
+.contact-form {
+  flex: 1 1 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input, 
+.contact-form textarea {
+  width: 100%;
+  padding: 14px;
+  border: 2px solid #949393;
+  border-radius: 5px 10px;
+  font-size: 1rem;
+  background: #fff;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #2bcaff;
+  outline: #2bcaff;
+}
+
+.contact-form button {
+  padding: 14px;
+  width: 200px;
+  margin: 0 auto;
+  background: linear-gradient(to right, #2bcaff, #007bff);
+  color: #fff;
+  font-weight: bold;
+  font-family: 'inter', sans-serif;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.contact-form button:hover {
+  background: linear-gradient(to right, #007bff, #2bcaff);
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-info, .contact-form {
+    width: 100%;
+  }
+  .contact-form {
+    text-align: center;
+  }
 }
 
 
