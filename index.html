@@ -7,49 +7,8 @@
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="stylesheet" href="./CSS/all.css">
     <script defer src="script.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-    <style>
-    .menu-toggle {
-        display: none;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 30px;
-        height: 20px;
-        cursor: pointer;
-        z-index: 1001;
-    }
-
-    .menu-toggle span {
-        display: block;
-        height: 3px;
-        width: 100%;
-        background: #333;
-        border-radius: 3px;
-        transition: 0.3s ease;
-    }
-
-    /* Animate into X */
-    .menu-toggle.active span:nth-child(1) {
-        transform: rotate(45deg) translate(5px, 5px);
-    }
-
-    .menu-toggle.active span:nth-child(2) {
-        opacity: 0;
-    }
-
-    .menu-toggle.active span:nth-child(3) {
-        transform: rotate(-45deg) translate(6px, -6px);
-    }
-
-    /* Show on mobile */
-    @media (max-width: 768px) {
-        .menu-toggle {
-            display: flex;
-        }
-    }
-
-    </style>
 </head>
 <body>
     <!-- Header/nav section start -->
@@ -57,7 +16,7 @@
         <div class="navbar-container">
             <div class="logo-and-icon">
                 <div class="logo">
-                    <a href="./index.html"><img src="./Assets/img/myLogo.png" alt="Silas logo" width="150"></a>
+                    <a href="./index.html"><img src="./Assets/img/My-logo.png" alt="Silas logo" width="150"></a>
                 </div>
                 <i class="fas fa-bars icon fa-2x" onclick="toggleMenu()"></i>
             </div>
@@ -75,15 +34,15 @@
       
 
     <!-- Hero section start -->
-    <section id="home" class="hero-section">
-        <div class="hero-content">
+    <section id="home" class="hero-section reveal">
+        <div class="hero-content reveal">
             <div class="hero-image">
                 <img src="./Assets/img/_MG_3520.jpg" alt="Silas..." width="250">
             </div>
-            <div class="hero-text">
+            <div class="hero-text reveal">
                 <p class="par">Hi <span class="fa-shake">&#128400;</span>, I'm</p>
-                <h1 class="highlight">Silas Ikani</h1>
-                <h2 class="typing-text"></h2>
+                <h1 class="masked-name">Silas Ikani</h1>
+                <h2 class="typing-text">A Developer</h2>
                 <a href="#contact" class="btn">Get in Touch</a>
                 <a href="#contact" class="btn2">Contact info</a>
                 <div class="social-links">
@@ -98,10 +57,10 @@
     <!-- About section start -->
     <section id="about" class="about-section">
         <div class="about-container">
-            <div class="about-image">
+            <div class="about-image reveal">
                 <img src="./Assets/img/aboutImage.jpg" alt="Silas...">
             </div>
-            <div class="about-text">
+            <div class="about-text reveal">
                 <h2 class="section-heading">
                     About Me
                     <span class="underline"></span>
@@ -119,14 +78,15 @@
     <!-- About section end -->
 
     <!-- Expertise/skills section start -->
-    <section class="skills-tools-section" id="skills">
-        <div class="skills-container">
-            <div class="skills-col">
+    <section class="skills-tools-section reveal" id="skills">
+        <div class="skills-tools-container">
+            <div class="skills-section reveal zoom">
                 <h2 class="section-heading">
                     My Expertise
                     <span class="underline"></span>
                 </h2>
-                <div class="skills-track">
+                <div class="skills-wrapper">
+                  <div class="skills-track">
                     <div class="skill-box">
                         <img src="./Assets/img/copyright/HTML.png" alt="" width="100">
                         <a href="https://www.w3schools.com/Html/" target="_blank">HTML</a>
@@ -151,7 +111,7 @@
                         <img src="./Assets/img/copyright/Tailwind.png" alt="" width="100">
                         <a href="https://tailwindcss.com/" target="_blank">TailWindCSS</a>
                     </div>
-                    <!-- Dupicate for infinite scroll -->
+                    <!-- Duplicate -->
                     <div class="skill-box">
                         <img src="./Assets/img/copyright/HTML.png" alt="" width="100">
                         <a href="https://www.w3schools.com/Html/" target="_blank">HTML</a>
@@ -176,72 +136,145 @@
                         <img src="./Assets/img/copyright/Tailwind.png" alt="" width="100">
                         <a href="https://tailwindcss.com/" target="_blank">TailWindCSS</a>
                     </div>
+                    <!-- Duplicate -->
+                    <div class="skill-box">
+                        <img src="./Assets/img/copyright/HTML.png" alt="" width="100">
+                        <a href="https://www.w3schools.com/Html/" target="_blank">HTML</a>
+                    </div>
+                    <div class="skill-box">
+                        <img src="./Assets/img/copyright/CSS.png" alt="" width="100">
+                        <a href="https://www.w3schools.com/css/" target="_blank">CSS</a>
+                    </div>
+                    <div class="skill-box">
+                        <img src="./Assets/img/copyright/Javascript.png" alt="" width="100">
+                        <a href="https://www.javascript.com/" target="_blank">Javascript</a>
+                    </div>
+                    <div class="skill-box">
+                        <img src="./Assets/img/copyright/React.png" alt="" width="100">
+                        <a href="https://react.dev/" target="_blank">React</a>
+                    </div>
+                    <div class="skill-box">
+                        <img src="./Assets/img/copyright/Bootstrap.png" alt="" width="100">
+                        <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>
+                    </div>
+                    <div class="skill-box">
+                        <img src="./Assets/img/copyright/Tailwind.png" alt="" width="100">
+                        <a href="https://tailwindcss.com/" target="_blank">TailWindCSS</a>
+                    </div>
+                  </div>
                 </div>
             </div>
-        </div>
-        <div class="tools-container">
-            <h2 class="section-heading">
-                Tools I Use
-                <span class="underline"></span>
-            </h2>
-            <div class="">
-                <img src="./Assets/img/copyright/tools/" alt="">
-                <a href=""></a>
-            </div>
-            <div class="">
-                <img src="./Assets/img/copyright/tools/" alt="">
-                <a href=""></a>
-            </div>
-            <div class="">
-                <img src="./Assets/img/copyright/tools/" alt="">
-                <a href=""></a>
-            </div>
-            <div class="">
-                <img src="./Assets/img/copyright/tools/" alt="">
-                <a href=""></a>
+            <div class="tools-container reveal">
+                <h2 class="section-heading">
+                    Tools I Use
+                    <span class="underline"></span>
+                </h2>
+                <div class="tools-grid">
+                    <div class="tool-box reveal zoom">
+                        <a href="https://github.com/" target="_blank">
+                            <img src="./Assets/img/copyright/tools/Github.png" alt="Github logo" class="github" width="150">
+                        </a>
+                        <div class="tool-text">
+                            <p>Github</p>
+                            <span>Repositories</span>
+                        </div>
+                    </div>
+                    <div class="tool-box reveal zoom">
+                        <a href="https://git-scm.com/" target="_blank">
+                            <img src="./Assets/img/copyright/tools/Git-Emblem.jpg" alt="Git logo" width="100">
+                        </a>
+                        <div class="tool-text">
+                            <p>Git</p>
+                            <span>Source Control</span>
+                        </div>
+                    </div>
+                    <div class="tool-box reveal zoom">
+                        <a href="https://vercel.com/" target="_blank">
+                            <img src="./Assets/img/copyright/tools/Vercel.png" alt="Vercel logo" width="100">
+                        </a>
+                        <div class="tool-text">
+                            <p>Vercel</p>
+                            <span>Deployment</span>
+                        </div>
+                    </div>
+                    <div class="tool-box reveal zoom">
+                        <a href="https://fontawesome.com/" target="_blank">
+                            <img src="./Assets/img/copyright/tools/Fontawesome.png" alt="Fontawesome logo" width="100">
+                        </a>
+                        <div class="tool-text">
+                            <p>Font Awesome</p>
+                            <span>Fonts and Icons</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>      
     <!-- Expertise/skills section end -->
 
+    <!-- Services section start -->
+     <section class="services-section reveal">
+        <h2 class="section-heading reveal">
+            What I Offer
+            <div class="underline"></div>
+        </h2>
+        <div class="services-container">
+            <div class="service-box reveal zoom">
+                <span class="icon-container">
+                    <i class="fas fa-code fa-1x"></i>
+                </span>
+                <h3>Web Development</h3>
+                <p>I build responsive and modern websites with clean code, engaging UI, and optimized performance across browsers.</p>
+            </div>
+            <div class="service-box reveal zoom">
+                <span class="icon-container">
+                    <i class="fas fa-laptop-code fa-1x"></i>
+                </span>
+                <h3>Landing Pages</h3>
+                <p>Need a bold landing page? I got you — built for speed, clarity, conversions, and smooth user interaction guaranteed.</p>
+            </div>
+            <div class="service-box reveal zoom">   
+                <span class="icon-container">
+                    <i class="fas fa-mobile-alt fa-1x"></i>
+                </span>
+                <h3>Responsive Design</h3>
+                <p>Pixel-perfect across all devices, from tiny phones to big desktops, ensuring smooth flow and layout stability everywhere.</p>
+            </div>
+        </div>
+     </section>
+    <!-- Services section end -->
 
-    
+    <!-- Contact section start -->
+     <section class="contact-section" id="contact">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2 class="section-heading">
+                    Contact Me
+                    <span class="underline"></span>
+                </h2>
+                <a href="mailto:silasikani44@gmail.com" target="_blank">
+                    <i class="far fa-paper-plane"></i>
+                    info@silasikani.com
+                </a>
+                <p><i class="fas fa-phone"></i>(+234)70-5281-4252</p>
+                <p><i class="fas fa-map-marker-alt"></i>Rumuokwurushi, Port-Harcourt, Rivers State, Nigeria</p>
+                <div class="social-links">
+                    <a href="" class="icon-facebook"><i class="fab fa-facebook fa-1x"></i></a>
+                    <a href="https://github.com/Silas-Ikani" class="icon-git"><i class="fab fa-github fa-1x"></i></a>
+                    <a href="" class="icon-linked"><i class="fab fa-linkedin fa-1x"></i></a>
+                    <a href="" class="icon-upwork"><i class="fa-brands fa-upwork fa-1x"></i></a>
+                    <a href="" class="icon-chat"><i class="fab fa-whatsapp fa-1x"></i></a>
+                </div>
+            </div>
+            <div class=""></div>
+        </div>
+     </section>
+    <!-- Contact section end -->
+
+
+
     <section id="projects" class="section">My Projects</section>
-    <section id="contact" class="section">Contact Me</section>
-    <p>https://nwfg71k2-5501.uks1.devtunnels.ms/</p>
 
-
-
-
-    <script>
-        // Navbar Scroll Effect
-        window.addEventListener("scroll", function () {
-            let navbar = document.getElementById("navbar");
-            if (window.scrollY > 50) {
-                navbar.classList.add("scrolled");
-            } else {
-                navbar.classList.remove("scrolled");
-            }
-        });
-
-
-
-        // Navbar responsiveness
-        function toggleMenu() {
-            const links = document.getElementById("navLinks");
-            links.classList.toggle("active");
-        }
-
-
-
-        // const toggle = document.getElementById('menu-toggle');
-        // const navLinks = document.getElementById('nav-links');
-
-        // toggle.addEventListener('click', () => {
-        //     toggle.classList.toggle('active');
-        //     navLinks.classList.toggle('active');
-        // });
-    </script>
     <script src="./JS/all.js"></script>
     <script src="./JS/script.js"></script>
 </body>

@@ -1,6 +1,24 @@
+// Navbar Scroll Effect
+window.addEventListener("scroll", function () {
+    let navbar = document.getElementById("navbar");
+    if (window.scrollY > 50) {
+        navbar.classList.add("scrolled");
+    } else {
+        navbar.classList.remove("scrolled");
+    }
+});
+
+
+
+// Navbar responsiveness
+function toggleMenu() {
+    const links = document.getElementById("navLinks");
+    links.classList.toggle("active");
+}
+
 
 // Typing Effect
-const words = ["a Web Developer", "a Designer", "a Problem Solver"];
+const words = ["a Web Developer", "Tech Enthusiast", "a Problem Solver"];
 let wordIndex = 0;
 let charIndex = 0;
 let typingText = document.querySelector(".typing-text");
@@ -29,3 +47,42 @@ const eraseEffect = () => {
 document.addEventListener("DOMContentLoaded", () => {
     setTimeout(typeEffect, 1000);
 });
+
+// reveal effect
+function revealOnScroll() {
+    const reveals = document.querySelectorAll('.reveal');
+    const windowHeight = window.innerHeight;
+  
+    reveals.forEach(el => {
+      const elementTop = el.getBoundingClientRect().top;
+  
+      if (elementTop < windowHeight - 100) {
+        el.classList.add('active');
+      } else {
+        el.classList.remove('active');
+      }
+    });
+  }
+  
+  window.addEventListener('scroll', revealOnScroll);
+  revealOnScroll();
+
+//   Reveal zoom effect
+function revealOnScroll() {
+    const reveals = document.querySelectorAll('.reveal');
+    const windowHeight = window.innerHeight;
+  
+    reveals.forEach(el => {
+      const elementTop = el.getBoundingClientRect().top;
+  
+      if (elementTop < windowHeight - 100) {
+        el.classList.add('active');
+      } else {
+        el.classList.remove('active');
+      }
+    });
+  }
+  
+  window.addEventListener('scroll', revealOnScroll);
+  revealOnScroll();  
+  
