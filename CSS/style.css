@@ -176,7 +176,7 @@ nav.scrolled {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 60px 100px;
+  padding: 40px 90px;
 }
 
 .hero-content {
@@ -235,7 +235,7 @@ nav.scrolled {
   color: #fff;
 }
 
-.social-links {
+.hero-text .social-links {
   display: flex;
   align-items: center;
   justify-content: center;
