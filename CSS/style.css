@@ -66,7 +66,7 @@ nav.scrolled {
 
 /* === Responsive Styles === */
 @media (max-width: 768px) {
-  .icon {
+  .icon-menu {
     display: block;
     margin-right: 30px;
   }
@@ -129,7 +129,6 @@ nav.scrolled {
 
 /* Text Effects */
 .masked-name {
-  /* color: #007bff; */
   font-weight: 900;
   font-family: "poppins", sans-serif;
   text-transform: uppercase;
@@ -137,6 +136,7 @@ nav.scrolled {
   background-size: 250%;
   background-position: 0% 50%;
 
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transform: scale(1);
@@ -793,9 +793,13 @@ nav.scrolled {
   flex: 1 1 250px;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 20px;
 }
 
+.contact-form p {
+  font-size: 1.2rem;
+  color: #2bcaff;
+}
 .contact-form input, 
 .contact-form textarea {
   width: 100%;
@@ -841,6 +845,7 @@ nav.scrolled {
   }
   .contact-form {
     text-align: center;
+    padding: 0;
   }
 }
 
