@@ -60,7 +60,9 @@ nav.scrolled {
 .nav-links li a {
   color: #000;
   text-decoration: none;
-  padding: 0.5rem;
+  padding-bottom: 0;
+  margin-left: 0.5rem;
+  /* padding: 0.5rem; */
   font-size: 1.1rem;
   font-weight: 400;
   position: relative;
@@ -423,6 +425,13 @@ nav.scrolled {
 /* Projects section */
 .projects-section {
   padding: 4rem 2rem;
+}
+
+.projects-section .section-heading {
+  text-align: center;
+}
+.projects-section .underline {
+  margin: 0 auto;
 }
 
 .projects-container {
@@ -940,7 +949,7 @@ nav.scrolled {
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: 0.3s ease;
 }
 .contact-form button:hover {
   background: linear-gradient(to right, #007bff, #2bcaff);
@@ -962,7 +971,28 @@ nav.scrolled {
 }
 
 
+hr {
+  width: 80%;
+  margin: 0 auto;
+  color: #2bcaff;
+}
 
+/* Footer section */
+footer {
+  padding: 1rem 0;
+  background-color: #f8fbff;
+}
+.footer-container {
+  text-align: center;
+  width: 100%;
+}
+
+.footer-container p {
+  font-size: 0.95rem;
+}
+.footer-container .name {
+  font-weight: 600;
+}
 
 
 

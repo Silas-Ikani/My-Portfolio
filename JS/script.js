@@ -84,5 +84,10 @@ function revealOnScroll() {
   }
   
   window.addEventListener('scroll', revealOnScroll);
-  revealOnScroll();  
+  revealOnScroll(); 
+
+
+
+  let year = new Date().getFullYear().toString();
+  document.getElementById("year").innerHTML = year;
   
