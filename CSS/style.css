@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  /* outline: 1px solid red; */
+  outline: 1px solid red;
 }
 
 html {
@@ -279,7 +279,6 @@ nav.scrolled {
 }
 
 .hero-text h1 {
-  /* font-size: 3rem; */
   margin-bottom: 5px;
 }
 
@@ -332,15 +331,17 @@ nav.scrolled {
     text-align: center;
   }
   .hero-text .typing-text {
-    font-size: 2rem
+      font-size: 2.5rem;
+      -webkit-text-stroke: 1px #2bcaff;
   }
 
   .hero-image img {
-    width: 300px;
-    height: 300px;
+    width: 280px;
+    height: 280px;
   }
   .hero-image .social-links {
-    margin: 0 auto;
+    position: absolute;
+    left: 90px;
   }
 
   .btn,
@@ -814,7 +815,6 @@ nav.scrolled {
   padding: 2rem;
   margin: auto;
   max-width: 1200px;
-  /* align-items: flex-start; */
 }
 
 .contact-info {
@@ -948,7 +948,7 @@ nav.scrolled {
 }
 .contact-form input, 
 .contact-form textarea {
-  width: 100%;
+  /* width: ; */
   padding: 14px;
   border: 2px solid #949393;
   border-radius: 5px 10px;
@@ -1021,7 +1021,7 @@ footer {
 
 @media (max-width: 768px) {
   .footer-container p {
-    font-size: 0.5rem;
+    font-size: 0.8rem;
   }
 }
 
