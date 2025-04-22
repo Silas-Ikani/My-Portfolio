@@ -18,7 +18,7 @@ body {
 /* Navbar */
 .navbar {
   background: transparent;
-  padding: 10px;
+  padding: 20px;
   width: 100%;
   position: fixed;
   top: 0;
@@ -39,7 +39,7 @@ nav.scrolled {
 }
 
 .logo img {
-  width: 130px;
+  width: 120px;
   height: auto;
   object-fit: contain;
 }
@@ -148,6 +148,7 @@ nav.scrolled {
 /* Text Effects */
 .masked-name {
   font-weight: 900;
+  font-size: 3rem;
   font-family: "poppins", sans-serif;
   text-transform: uppercase;
   background: url(/Assets/img/Mask.jpg) repeat;
@@ -175,7 +176,11 @@ nav.scrolled {
 
 .typing-text {
   font-weight: 600;
-  color: #2bcaff;
+  font-size: 4rem;
+  text-transform: capitalize;
+  color: transparent;
+  -webkit-text-stroke: 2px #2bcaff;
+  /* text-stroke: 2px #ffffff; */
   margin-bottom: 8px;
 }
 .typing-text::after {
@@ -267,14 +272,14 @@ nav.scrolled {
   color: #fff;
   border: none;
 }
-
+  
 .hero-text {
   flex: 1;
   text-align: start;
 }
 
 .hero-text h1 {
-  font-size: 3rem;
+  /* font-size: 3rem; */
   margin-bottom: 5px;
 }
 
@@ -326,10 +331,16 @@ nav.scrolled {
     padding: 20px 0;
     text-align: center;
   }
+  .hero-text .typing-text {
+    font-size: 2rem
+  }
 
   .hero-image img {
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
+  }
+  .hero-image .social-links {
+    margin: 0 auto;
   }
 
   .btn,
