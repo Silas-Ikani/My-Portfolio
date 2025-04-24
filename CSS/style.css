@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +10,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: "inter", sans-serif;
+  font-family: 'Open sans', sans-serif;
   margin: 0;
   padding: 0;
   background: #f9f9f9;
@@ -132,7 +134,7 @@ nav.scrolled {
 .masked-name {
   font-weight: 900;
   font-size: 2.8rem;
-  font-family: "poppins", sans-serif;
+  font-family: 'poppins', sans-serif;
   text-transform: uppercase;
   background: linear-gradient(to right, #000, #949393);
   -webkit-background-clip: text;
@@ -143,9 +145,9 @@ nav.scrolled {
 .typing-text {
   font-weight: 900;
   font-size: 3.7rem;
-  text-transform: uppercase;
+  text-transform: capitalize;
   color: #2bcaff;
-  text-shadow: 0 4px #373737;
+  text-shadow: 0 4px #6f6c6c;
   margin-bottom: 8px;
 }
 /* .typing-text::after {
