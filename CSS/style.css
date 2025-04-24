@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Space+Grotesk:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Space+Grotesk:wght@600;800&display=swap');
 
 
 * {
@@ -141,6 +141,7 @@ nav.scrolled {
 }
 
 .typing-text {
+  font-family: 'DM Sans', sans-serif;
   font-weight: 900;
   font-size: 3.7rem;
   text-transform: capitalize;
