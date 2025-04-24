@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Space+Grotesk:wght@400;800&display=swap');
+
 
 * {
   margin: 0;
@@ -134,8 +136,8 @@ nav.scrolled {
 .masked-name {
   font-weight: 900;
   font-size: 2.8rem;
-  font-family: 'poppins', sans-serif;
-  text-transform: uppercase;
+  font-family: 'Space Grotesk', sans-serif;
+  /* text-transform: uppercase; */
 }
 
 .typing-text {
@@ -143,7 +145,6 @@ nav.scrolled {
   font-size: 3.7rem;
   text-transform: capitalize;
   color: #2bcaff;
-  /* text-shadow: 0 4px #6f6c6c; */
   margin-bottom: 8px;
 }
 /* .typing-text::after {
@@ -485,7 +486,7 @@ nav.scrolled {
 
 .project-links {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   margin: 0 1.5rem 1.5rem;
 }
 
@@ -964,6 +965,9 @@ hr {
   font-size: 0.98rem;
 }
 .footer-container .name {
+  text-decoration: none;
+  color: #2bcaff;
+  font-family: 'DM Sans', sans-serif;
   font-weight: 600;
 }
 
