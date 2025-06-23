@@ -137,7 +137,6 @@ nav.scrolled {
   font-weight: 900;
   font-size: 2.8rem;
   font-family: 'Space Grotesk', sans-serif;
-  /* text-transform: uppercase; */
 }
 
 .typing-text {
@@ -166,7 +165,7 @@ nav.scrolled {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 40px 90px;
+  padding: 50px 90px;
 }
 
 .hero-content {
@@ -282,7 +281,7 @@ nav.scrolled {
 /* Hero section styles for smaller screens */
 @media (max-width: 992px) {
   .hero-section {
-    padding: 60px 40px;
+    padding: 70px 40px;
   }
 
   .hero-content {
@@ -703,7 +702,7 @@ nav.scrolled {
 }
 
 .service-box {
-  width: 350px;
+  /* width: 350px; */
   background-color: #fff;
   border-radius: 10px 20px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
@@ -793,7 +792,7 @@ nav.scrolled {
   display: flex;
   align-items: center;
   margin: 20px 0;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: #f9f9f9;
   text-decoration: none;
   transition: color 0.3s ease;
@@ -813,15 +812,15 @@ nav.scrolled {
   align-items: center;
   justify-content: start;
   margin-top: 20px;
-  gap: 15px;
+  gap: 5px;
 }
 .icon-facebook {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 35px;
-  height: 35px;
-  border: 1px solid #f9f9f9;
+  width: 40px;
+  height: 40px;
+  /* border: 1px solid #f9f9f9; */
   border-radius: 50%;
   text-decoration: none;
   color: #fff;
@@ -836,9 +835,9 @@ nav.scrolled {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 35px;
-  height: 35px;
-  border: 1px solid #f9f9f9;
+  width: 40px;
+  height: 40px;
+  /* border: 1px solid #f9f9f9; */
   border-radius: 50%;
   text-decoration: none;
   color: #fff;
@@ -853,9 +852,9 @@ nav.scrolled {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 35px;
-  height: 35px;
-  border: 1px solid #f9f9f9;
+  width: 40px;
+  height: 40px;
+  /* border: 1px solid #f9f9f9; */
   border-radius: 50%;
   transition: 0.3s ease;
   text-decoration: none;
@@ -871,9 +870,9 @@ nav.scrolled {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 35px;
-  height: 35px;
-  border: 1px solid #f9f9f9;
+  width: 40px;
+  height: 40px;
+  /* border: 1px solid #f9f9f9; */
   border-radius: 50%;
   transition: 0.3s ease;
   text-decoration: none;
@@ -889,9 +888,9 @@ nav.scrolled {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 35px;
-  height: 35px;
-  border: 1px solid #f9f9f9;
+  width: 40px;
+  height: 40px;
+  /* border: 1px solid #f9f9f9; */
   border-radius: 50%;
   transition: 0.3s ease;
   text-decoration: none;
